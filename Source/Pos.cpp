@@ -42,5 +42,9 @@ bool Pos::IsEqual(const Pos& p) const
     return ((m_x == p.m_x) && (m_y == p.m_y));
 }
 
+bool Pos::IsMichael(const Pos& p) const
+{
+    return true;
+}
 
 //No more code after this line

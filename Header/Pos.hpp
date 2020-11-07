@@ -14,6 +14,7 @@ public:
     Pos& AdjustBy(const int dx, const int dy);
     void Print() const;
     bool IsEqual(const Pos& p) const;
+    bool IsMichael(const Pos& p) const;
 
 private:
     float m_x;
