@@ -44,7 +44,7 @@ bool Pos::IsEqual(const Pos& p) const
 
 bool Pos::IsMichael(const Pos& p) const
 {
-    return true;
+    return false;
 }
 
 //No more code after this line
