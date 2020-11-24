@@ -7,7 +7,6 @@ class Pos
 public:
     Pos(float x = 0, float y = 0);
     Pos& operator=(const Pos& other);
-    Pos
     float GetX() const;
     float GetY() const;
 
@@ -15,6 +14,7 @@ public:
     Pos& AdjustBy(const float dx, const float dy);
     void Print() const;
     bool IsEqual(const Pos& p) const;
+    bool IsMichael(const Pos& p) const;
 
     float Distance(const Pos& P) const;//return distanse between self and other
 private:
