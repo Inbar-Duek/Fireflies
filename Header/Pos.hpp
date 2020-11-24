@@ -7,18 +7,19 @@ class Pos
 public:
     Pos(float x = 0, float y = 0);
     Pos& operator=(const Pos& other);
+    Pos
     float GetX() const;
     float GetY() const;
 
     Pos& AdjustBy(const Pos& p);
-    Pos& AdjustBy(const int dx, const int dy);
+    Pos& AdjustBy(const float dx, const float dy);
     void Print() const;
     bool IsEqual(const Pos& p) const;
 
+    float Distance(const Pos& P) const;//return distanse between self and other
 private:
     float m_x;
     float m_y;
-
 };
 
 #endif //__POS_HPP__
@@ -26,5 +27,5 @@ private:
 int main ()
 {
     Pos pos1(3,5);
-    Pos pos2 = pos1;
+    Pos pos2 = pos1; //copy constructor
 }

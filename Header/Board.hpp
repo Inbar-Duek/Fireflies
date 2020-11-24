@@ -1,10 +1,12 @@
-#ifndef __FIREFLY_HPP__
-#define __FIREFLY_HPP__
+#ifndef __BOARD_HPP__
+#define __BOARD_HPP__
 
 #include "Pos.hpp"
+#include "Firefly.hpp"
+
 
 //TODO write Source file
-class Firefly
+class Board
 {
 public:
     void init(Pos& Pos, float StartingCharge, float ActivationThreshold, float InternalCycleCharge)
@@ -51,4 +53,4 @@ private:
     }
 };
 
-#endif //__FIREFLY_HPP__
+#endif //__BOARD_HPP__
