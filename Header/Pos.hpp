@@ -7,6 +7,7 @@ class Pos
 public:
     Pos(float x = 0, float y = 0);
     Pos& operator=(const Pos& other);
+    Pos(const Pos& P);
     float GetX() const;
     float GetY() const;
 
@@ -23,9 +24,3 @@ private:
 };
 
 #endif //__POS_HPP__
-
-int main ()
-{
-    Pos pos1(3,5);
-    Pos pos2 = pos1; //copy constructor
-}

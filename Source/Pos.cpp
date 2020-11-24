@@ -7,6 +7,10 @@ Pos::Pos(const float x, const float y)
     : m_x(x), m_y(y)
 {
 }
+Pos::Pos(const Pos& P)
+    :m_x(P.m_x), m_y(P.m_y)
+{ 
+}
 
 Pos& Pos::operator = (const Pos& P)
 {  
@@ -41,6 +45,16 @@ bool Pos::IsEqual(const Pos& p) const
 float Pos::Distance(const Pos& P) const
 {
     return sqrt(pow((m_x - P.m_x), 2) + pow((m_y-P.m_y), 2));
+}
+
+float Pos::GetX() const
+{
+    return m_x;
+}
+
+float Pos::GetY() const
+{
+    return m_y;
 }
 
 //No more code after this line
