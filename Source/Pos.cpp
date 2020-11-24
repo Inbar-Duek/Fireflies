@@ -38,15 +38,9 @@ bool Pos::IsEqual(const Pos& p) const
     return ((m_x == p.m_x) && (m_y == p.m_y));
 }
 
-<<<<<<< HEAD
 float Pos::Distance(const Pos& P) const
 {
     return sqrt(pow((m_x - P.m_x), 2) + pow((m_y-P.m_y), 2));
-=======
-bool Pos::IsMichael(const Pos& p) const
-{
-    return false;
->>>>>>> f61b3cf7c231a75459a10facb238a057b95deaff
 }
 
 //No more code after this line
